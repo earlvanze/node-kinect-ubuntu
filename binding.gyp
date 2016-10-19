@@ -9,9 +9,9 @@
          'libfreenect.a',
       ],
       'conditions': [
-        ['OS=="mac"', {
-          'include_dirs': ['/usr/local/include'],
-          'library_dirs': ['/usr/local/lib'],
+        ['OS=="linux"', {
+          'include_dirs': ['/usr/include'],
+          'library_dirs': ['/usr/lib'],
         }],
       ]
     }
