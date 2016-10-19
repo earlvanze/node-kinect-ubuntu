@@ -6,7 +6,7 @@ Kinect in Node.js, ported to run on Ubuntu.
 
 ```sh
 $ sudo apt-get update && sudo apt-get upgrade 
-$ sudo apt-get install libusb-1.0-0-dev && sudo apt-get install libfreenect && sudo apt-get install libxmu-dev libxi-dev && sudo apt-get install freeglut3-dev && sudo apt-get install usbutils && apt-get install libkrb5-dev && apt-get install nodejs-legacy
+$ sudo apt-get install libusb-1.0-0-dev libfreenect libfreenect-dev libxmu-dev libxi-dev freeglut3-dev usbutils libkrb5-dev nodejs-legacy
 $ chown -R $(whoami) ~/.npm && chown -R $(whoami) ~/node_modules
 $ cd ~/node_modules && git clone https://github.com/farazfazli/node-kinect-ubuntu.git && cd node-kinect-ubuntu && npm install
 ```
