@@ -6,7 +6,7 @@
         'src/kinect.cc',
       ],
       'libraries': [
-         'libfreenect.a',
+         'libfreenect.so',
       ],
       'conditions': [
         ['OS=="linux"', {
