@@ -2,9 +2,9 @@
 
 Kinect in Node.js, ported to run on Ubuntu ARM.
 
-# Nexus 5
+# Install on Ubuntu Touch
 
-For installing on Nexus 5, first enable developer tools and run the following:
+For installing on Ubuntu Touch, first enable developer tools and run the following:
 
 ```
 $ phablet-config writable-image
