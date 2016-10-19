@@ -6,14 +6,14 @@
         'src/kinect.cc',
       ],
       'libraries': [
-         'libfreenect.so',
+         '/usr/lib/libfreenect.so',
       ],
-      'conditions': [
-        ['OS=="linux"', {
-          'include_dirs': ['/usr/include'],
-          'library_dirs': ['/usr/lib'],
-        }],
-      ]
+       'include_dirs': [
+         '/usr/include'
+      ],
+       'library_dirs': [
+         '/usr/lib'
+      ],
     }
   ]
 }
