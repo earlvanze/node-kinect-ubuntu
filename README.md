@@ -10,7 +10,7 @@ Kinect in Node.js.
 Then:
 
 ```sh
-$ git clone git://github.com/pgte/node-kinect.git
+$ git clone https://github.com/farazfazli/node-kinect-ubuntu.git
 ```
 
 # Test
