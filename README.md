@@ -16,7 +16,7 @@ Reboot, then follow the instructions below.
 
 ```sh
 $ sudo apt-get update && sudo apt-get upgrade 
-$ sudo apt-get install git-core cmake libusb-1.0-0-dev libfreenect-dev libxmu-dev libxi-dev freeglut3-dev usbutils libkrb5-dev nodejs-legacy
+$ sudo apt-get install build-essential git-core cmake libusb-1.0-0-dev libfreenect-dev libxmu-dev libxi-dev freeglut3-dev usbutils libkrb5-dev nodejs-legacy
 $ cd ~ && git clone git://github.com/OpenKinect/libfreenect.git && cd libfreenect && mkdir build && cd build && cmake .. && make && sudo make install && sudo ldconfig /usr/local/lib64/ && npm install serialport
 $ chown -R $(whoami) ~/.npm && chown -R $(whoami) ~/node_modules
 $ cd ~/node_modules && git clone https://github.com/farazfazli/node-kinect-ubuntu.git && cd node-kinect-ubuntu && npm install
