@@ -1,8 +1,18 @@
 # node-kinect
 
-Kinect in Node.js, ported to run on Ubuntu.
+Kinect in Node.js, ported to run on Ubuntu ARM.
 
-# Install
+# Nexus 5
+
+For installing on Nexus 5, first enable developer tools and run the following:
+
+```
+$ phablet-config writable-image
+```
+
+Reboot, then follow the instructions below.
+
+# Install on ARM
 
 ```sh
 $ sudo apt-get update && sudo apt-get upgrade 
