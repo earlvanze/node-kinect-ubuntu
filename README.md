@@ -28,7 +28,7 @@ $ chown -R $(whoami) ~/.npm && chown -R $(whoami) ~/node_modules
 $ cd ~/node_modules && git clone https://github.com/farazfazli/node-kinect-ubuntu.git && cd node-kinect-ubuntu && npm install && cd ~/
 
 # Setup VNC for X11
-# sudo apt-get install xorg openbox x11vnc
+$ sudo apt-get install xorg openbox x11vnc
 $ echo "X11Forwarding yes" >> /etc/ssh/sshd_config
 $ echo "X11UseLocalhost yes" >> /etc/ssh/sshd_config
 $ echo "export DISPLAY=:0.0" >> ~/.bashrc
