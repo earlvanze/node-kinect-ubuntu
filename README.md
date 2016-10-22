@@ -18,7 +18,7 @@ Reboot, then follow the instructions below.
 $ sudo apt-get update && sudo apt-get upgrade
 
 # Get dependencies
-$ sudo apt-get install build-essential git-core cmake libusb-1.0-0-dev libfreenect-dev libxmu-dev libxi-dev freeglut3-dev usbutils libkrb5-dev nodejs-legacy npm xorg openbox x11vnc
+$ sudo apt-get install build-essential git-core cmake libusb-1.0-0-dev libfreenect-dev libxmu-dev libxi-dev freeglut3-dev usbutils libkrb5-dev nodejs-legacy npm
 
 # Setup libfreenect and serialport
 $ cd ~ && git clone git://github.com/OpenKinect/libfreenect.git && cd libfreenect && mkdir build && cd build && export CC=/usr/bin/gcc && export CXX=/usr/bin/g++ && cmake .. && make && sudo make install && cd /usr/lib && sudo ln -s ~/libfreenect/build/lib/* . && sudo ldconfig /usr/local/lib64/ && cd ~/ && npm install serialport
@@ -28,6 +28,7 @@ $ chown -R $(whoami) ~/.npm && chown -R $(whoami) ~/node_modules
 $ cd ~/node_modules && git clone https://github.com/farazfazli/node-kinect-ubuntu.git && cd node-kinect-ubuntu && npm install && cd ~/
 
 # Setup VNC for X11
+# sudo apt-get install xorg openbox x11vnc
 $ echo "X11Forwarding yes" >> /etc/ssh/sshd_config
 $ echo "X11UseLocalhost yes" >> /etc/ssh/sshd_config
 $ echo "export DISPLAY=:0.0" >> ~/.bashrc
